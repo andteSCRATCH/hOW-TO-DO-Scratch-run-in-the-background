@@ -1,0 +1,18 @@
+import time
+
+# Inicializar el cronómetro
+start_time = time.time()
+
+try:
+    while True:
+        # Calcular el tiempo transcurrido
+        elapsed_time = time.time() - start_time
+        
+        # Mostrar el tiempo transcurrido (opcional)
+        print(f"Tiempo transcurrido: {elapsed_time:.2f} segundos", end="\r")
+        
+        # Aquí puedes agregar más lógica que se ejecutará continuamente
+
+except KeyboardInterrupt:
+    # Permitir salir del bucle con Ctrl+C
+    print("\nPrograma terminado.")
